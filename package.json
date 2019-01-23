@@ -1,0 +1,34 @@
+{
+  "name": "laravel-mix-bundle",
+  "version": "1.0.4",
+  "description": "Zero configuration asset bundling",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "laravel",
+    "laravel mix",
+    "mix",
+    "webpack",
+    "bundle",
+    "bundling"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomgrv/laravel-mix-bundle.git"
+  },
+  "author": "tomgrv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomgrv/laravel-mix-bundle/issues"
+  },
+  "homepage": "https://github.com/tomgrv/laravel-mix-bundle#readme",
+  "peerDependencies": {
+  },
+  "dependencies": { 
+    
+    "laravel-mix": ">= 2.1.7",
+    "postcss-url": "^8.0.0"
+  }
+}
