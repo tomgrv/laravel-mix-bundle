@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const pkg = require('read-pkg-up');
 
 mix.extend('bundle', new class {
 
