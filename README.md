@@ -9,6 +9,7 @@
 This extension provides zero configuration Webpack asset bundling support to your Mix (v2.1 and up) builds.
 
 This extension will:
+*  Install packages mentionned in package.json as 'bundledDependencies'
 *  Generate in your public folder a unique js and a unique css file containing all js & css referenced from the specified entry source file, recursively:
     * Local project ressources
     * External, npm managed ressources

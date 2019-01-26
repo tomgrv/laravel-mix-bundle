@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-bundle",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Zero configuration asset bundling",
   "main": "src/index.js",
   "scripts": {
@@ -24,10 +24,11 @@
     "url": "https://github.com/tomgrv/laravel-mix-bundle/issues"
   },
   "homepage": "https://github.com/tomgrv/laravel-mix-bundle#readme",
-  "peerDependencies": {
+  "peerDependencies": {},
+  "dependencies": {
   },
-  "dependencies": { 
-    
+  "devDependencies": {
+    "read-pkg-up": "^4.0.0",
     "laravel-mix": ">= 2.1.7",
     "postcss-url": "^8.0.0"
   }

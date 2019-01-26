@@ -1,7 +1,6 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
-
-class Bundle {
+mix.extend('bundle', new class {
 
     register(params) {
         Config.sourceFile = params.sourceFile || 'resources/assets/index.js';
@@ -26,10 +25,9 @@ class Bundle {
     }
 
     dependencies() {
-        return ['postcss-url']
+        const deps = pkg.sync().pkg.bundleDependencies || [];
+        deps.push('postcss-url', 'read-pkg-up');
+        return deps;
     }
 
-}
-
-
-mix.extend('bundle', new Bundle());
+});
