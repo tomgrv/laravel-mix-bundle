@@ -21,7 +21,7 @@ mix.extend(
 			);
 
 			mix
-				.js(Config.sourceFile, '.build/package.js')
+				.js(Config.sourceFile, '.build/' + Config.outputName + '.js')
 				.extract()
 				.copy(Config.publicPath + '/.build/*.js', Config.publicPath + '/js/')
 				.copy(Config.publicPath + '/.build/*.css', Config.publicPath + '/css/');
@@ -36,7 +36,6 @@ mix.extend(
 		webpackConfig(webpackConfig) {
 			webpackConfig.plugins.push(
 				new CleanWebpackPlugin({
-					verbose: true,
 					cleanOnceBeforeBuildPatterns: [ './css', './js', './fonts' ],
 					cleanAfterEveryBuildPatterns: [ './.build' ]
 				})

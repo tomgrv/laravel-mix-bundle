@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-bundle",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Zero configuration asset bundling",
   "main": "src/index.js",
   "scripts": {
