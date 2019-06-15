@@ -21,7 +21,8 @@ mix.extend('bundle', new class {
         mix
             .js(Config.sourceFile, '.build/package.js')
             .extract()
-            .babel(Config.publicPath + '/.build/*.js', Config.publicPath + '/js/' + Config.outputName + (Mix.inProduction() ? '.min.js' : '.js'))
+            .babel(Config.publicPath + '/.build/**/!(manifest).js', Config.publicPath + '/js/' + Config.outputName + (Mix.inProduction() ? '.min.js' : '.js'))
+            .copy(Config.publicPath + '/.build/manifest.js', Config.publicPath + '/js/')
             .babel(Config.publicPath + '/.build/*.css', Config.publicPath + '/css/' + Config.outputName + (Mix.inProduction() ? '.min.css' : '.css'))
     }
 
