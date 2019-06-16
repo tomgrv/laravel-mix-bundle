@@ -10,7 +10,7 @@ This extension provides zero configuration Webpack asset bundling support to you
 
 This extension will:
 *  Install packages mentionned in package.json as 'bundledDependencies'
-*  Generate in your public folder a unique js and a unique css file containing all js & css referenced from the specified entry source file, recursively:
+*  Generate in your public folder a unique js (+ manifest.js by webpack) and a unique css file containing all js & css referenced from the specified entry source file, recursively:
     * Local project ressources
     * External, npm managed ressources
 * Copy in your public folder all referenced assets (fonts, images) from the specified entry source file, recursively:
@@ -38,9 +38,42 @@ require('laravel-mix-bundle');
 
 mix.setPublicPath('public')
     .bundle({
-        sourceFile : "resources/assets/index.js"
-        outputName : "app"
+        sourceFile : "resources/assets/index.js",
+        outputName : "my-app"
     });
 ```
 
+(If outputName is empty, takes name from current package.json)
+
 And you're done! Compile everything down with `npm run dev`.
+
+Bundled files are generated in temporary .build folder, then published in css/js/fonts/images folders in public folder
+
+## Npm packages
+
+In your package.json file, you can now add following references:
+
+```
+"style": "public/css/my-app.css",
+"module": "public/js/my-app",
+"unpkg": "public/js/my-app.min.js",
+```
+
+(You can change 'public' folder by 'dist' folder for module bundling)
+
+## Blade
+
+In your blade template, you can now include generated files:
+
+* Unique css file :
+
+```
+<link rel="stylesheet" href="{{ asset('css/my-app.min.css') }}">
+```
+
+* Unique js files & manifest :
+
+```
+ <script src="{{ asset('js/manifest.js') }}"></script>
+ <script src="{{ asset('js/my-app.min.js') }}"></script>
+ ```
