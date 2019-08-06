@@ -56,7 +56,7 @@ In your package.json file, you can now add following references:
 ```
 "style": "public/css/my-app.css",
 "module": "public/js/my-app",
-"unpkg": "public/js/my-app.min.js",
+"unpkg": "public/js/my-app.js",
 ```
 
 (You can change 'public' folder by 'dist' folder for module bundling)
@@ -68,12 +68,12 @@ In your blade template, you can now include generated files:
 * Unique css file :
 
 ```
-<link rel="stylesheet" href="{{ asset('css/my-app.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/my-app.css') }}">
 ```
 
 * Unique js files & manifest :
 
 ```
  <script src="{{ asset('js/manifest.js') }}"></script>
- <script src="{{ asset('js/my-app.min.js') }}"></script>
+ <script src="{{ asset('js/my-app.js') }}"></script>
  ```
