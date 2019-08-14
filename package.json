@@ -1,45 +1,45 @@
 {
-  "name": "laravel-mix-bundle",
-  "version": "1.2.1",
-  "description": "Zero configuration asset bundling",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "laravel",
-    "laravel mix",
-    "mix",
-    "webpack",
-    "bundle",
-    "bundling"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tomgrv/laravel-mix-bundle.git"
-  },
-  "author": "tomgrv",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tomgrv/laravel-mix-bundle/issues"
-  },
-  "homepage": "https://github.com/tomgrv/laravel-mix-bundle#readme",
-  "peerDependencies": {
-    "commitizen": "^3.0.5"
-  },
-  "dependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "laravel-mix": "^4.0.16",
-    "postcss-url": "^8.0.0",
-    "read-pkg-up": "^4.0.0"
-  },
-  "devDependencies": {
-    "conventional-changelog-cli": "^2.0.21",
-    "cz-conventional-changelog": "^2.1.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+	"name": "laravel-mix-bundle",
+	"version": "1.2.2",
+	"description": "Zero configuration asset bundling",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"laravel",
+		"laravel mix",
+		"mix",
+		"webpack",
+		"bundle",
+		"bundling"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tomgrv/laravel-mix-bundle.git"
+	},
+	"author": "tomgrv",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/tomgrv/laravel-mix-bundle/issues"
+	},
+	"homepage": "https://github.com/tomgrv/laravel-mix-bundle#readme",
+	"peerDependencies": {
+		"commitizen": "^3.0.5"
+	},
+	"dependencies": {
+		"clean-webpack-plugin": "^3.0.0",
+		"laravel-mix": "^4.1.2",
+		"postcss-url": "^8.0.0",
+		"read-pkg-up": "^4.0.0"
+	},
+	"devDependencies": {
+		"conventional-changelog-cli": "^2.0.23",
+		"cz-conventional-changelog": "^2.1.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	}
 }

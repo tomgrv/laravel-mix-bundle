@@ -37,7 +37,7 @@ mix.extend(
 			webpackConfig.plugins.push(
 				new CleanWebpackPlugin({
 					cleanOnceBeforeBuildPatterns: [ './css', './js', './fonts' ],
-					cleanAfterEveryBuildPatterns: [ './.build' ]
+					cleanAfterEveryBuildPatterns: [ './.build/**/*' ]
 				})
 			);
 		}
