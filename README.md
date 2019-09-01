@@ -1,9 +1,10 @@
-<p align="center">
-<a href="https://www.npmjs.com/package/laravel-mix-bundle"><img src="https://img.shields.io/npm/v/laravel-mix-bundle.svg" alt="NPM"></a>
-<a href="https://npmcharts.com/compare/laravel-mix-bundle?minimal=true"><img src="https://img.shields.io/npm/dt/laravel-mix-bundle.svg" alt="NPM"></a>
-<a href="https://www.npmjs.com/package/laravel-mix-bundle"><img src="https://img.shields.io/npm/l/laravel-mix-bundle.svg" alt="NPM"></a>
-</p>
+<div align="center">
 
+[![npm version](https://img.shields.io/npm/v/laravel-mix-bundle.svg)]()
+[![npm downloads](https://img.shields.io/npm/dt/laravel-mix-bundle.svg)]()
+[![license](https://img.shields.io/github/license/tomgrv/laravel-mix-bundle.svg)]()
+
+</div>
 # Laravel Mix Bundle
 
 This extension provides zero configuration Webpack asset bundling support to your Mix (v2.1 and up) builds.
