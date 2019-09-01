@@ -1,10 +1,11 @@
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/laravel-mix-bundle.svg)]()
-[![npm downloads](https://img.shields.io/npm/dt/laravel-mix-bundle.svg)]()
-[![license](https://img.shields.io/github/license/tomgrv/laravel-mix-bundle.svg)]()
+[![npm version](https://img.shields.io/npm/v/laravel-mix-bundle.svg)](https://www.npmjs.com/package/laravel-mix-bundle)
+[![npm downloads](https://img.shields.io/npm/dt/laravel-mix-bundle.svg)](https://www.npmjs.com/package/laravel-mix-bundle)
+[![license](https://img.shields.io/github/license/tomgrv/laravel-mix-bundle.svg)](https://github.com/tomgrv/laravel-mix-bundle/blob/master/LICENSE)
 
 </div>
+
 # Laravel Mix Bundle
 
 This extension provides zero configuration Webpack asset bundling support to your Mix (v2.1 and up) builds.
@@ -20,14 +21,14 @@ This extension will:
 
 All folders are taken from standard mix config.
 
-In production mode, js and css files will be minified and generated with the .min extension prefix
+In production mode, js and css files will be minified.
 
 ## Usage
 
 First, install the extension.
 
-```
-npm install laravel-mix-bundle --save-dev
+```bash
+$ npm install laravel-mix-bundle --save-dev
 ```
 
 Then, require it within your `webpack.mix.js` file, like so:
@@ -48,13 +49,13 @@ mix.setPublicPath('public')
 
 And you're done! Compile everything down with `npm run dev`.
 
-Bundled files are generated in temporary .build folder, then published in css/js/fonts/images folders in public folder
+Bundled files are generated in temporary .build folder, then published in css-js-fonts-images folders (respectively), in dist folder.
 
 ## Npm packages
 
 In your package.json file, you can now add following references:
 
-```
+```json
 "style": "public/css/my-app.css",
 "module": "public/js/my-app",
 "unpkg": "public/js/my-app.js",
@@ -68,13 +69,13 @@ In your blade template, you can now include generated files:
 
 * Unique css file :
 
-```
+```html
 <link rel="stylesheet" href="{{ asset('css/my-app.css') }}">
 ```
 
 * Unique js files & manifest :
 
-```
+```html
  <script src="{{ asset('js/manifest.js') }}"></script>
  <script src="{{ asset('js/my-app.js') }}"></script>
  ```
