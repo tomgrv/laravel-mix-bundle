@@ -50,6 +50,6 @@ publish:
       - master
   script:
     - gv /showvariable semver
-    - npm version $(gv /config .gitversion.yml /showvariable semver) --allow-same-version
+    - npm version $(gv /config $(pwd)/.gitversion.yml /showvariable semver) --allow-same-version
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
