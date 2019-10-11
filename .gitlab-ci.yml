@@ -1,4 +1,4 @@
 include:
   - project: "tomgrv/ci-builder"
     ref: master
-    file: "/tempaltes/node/.gitlab-ci.yml"
+    file: "/templates/node/.gitlab-ci.yml"
