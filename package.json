@@ -1,10 +1,14 @@
 {
   "name": "laravel-mix-bundle",
-  "version": "1.0.0",
+  "version": "${GitVersion_SemVer}",
   "description": "Zero configuration asset bundling",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cz-init": "commitizen init cz-conventional-changelog --save-dev --save-exact --force",
+    "withproxy": "git config --global --add url.\\\"https://\\\".insteadOf ssh://",
+    "test": "echo \"No test specified\" && exit 0",
+    "lint": "echo \"No lint specified\" && exit 0",
+    "prod": "echo \"No prod specified\" && exit 0"
   },
   "keywords": [
     "laravel",
